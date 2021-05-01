@@ -1,0 +1,25 @@
+const getters = {
+    type: state => state.utilisateurs.type_utilisateur,
+    nom: state => state.utilisateurs.nom_utilisateur,
+    prenoms: state => state.utilisateurs.prenoms_utilisateur,
+    statut: state => state.utilisateurs.statut,
+    statut_caissier: state => state.utilisateurs.statut_caissier,
+    matricule:state=>state.utilisateurs.matricule,
+    info : state => state.articles.info,
+    valeurs : state => state.articles.valeurs,
+    messages : state => state.articles.messages,
+    total_article : state => state.catalogue.total_article,
+    total_quantite : state => state.catalogue.total_quantite,
+    a_vendre : state => state.catalogue.a_vendre,
+    total_quantite_vendu : state => state.catalogue.total_quantite_vendu,
+    total_vente_vendu : state => state.catalogue.total_vente_vendu,
+    quantite_restant : state => state.catalogue.quantite_restant,
+    total_restant : state => state.catalogue.total_restant,
+    code_facture : state=>state.achats.code_facture,
+    donnees : state=>state.caissier.donnees,
+    info_session : state => state.manager.info,
+    messages_session : state => state.manager.messages,
+    factures : state => state.caissier.factures,
+    infopaiement : state => state.caissier.infopaiement
+}
+export default getters
